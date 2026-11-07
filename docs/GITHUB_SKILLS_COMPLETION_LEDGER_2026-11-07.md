@@ -4,7 +4,7 @@
 **GitHub account:** [Nanodagr8](https://github.com/Nanodagr8)  
 **Training policy:** Free-only. No paid certification exams, subscriptions, or purchased cloud runtime. This ledger records completed **GitHub Skills exercises**, not formal GitHub certification exams or independently issued digital badges.
 
-## Completed exercises (twelve verified GitHub Skills course completions (eleven closed instructor issues plus one completed release exercise))
+## Completed exercises (13 verified GitHub Skills course completions: 12 closed instructor issues plus the completed release exercise)
 
 | Exercise | Evidence | Key verified work |
 | --- | --- | --- |
@@ -20,11 +20,13 @@
 | Reusable Workflows | [Repository](https://github.com/Nanodagr8/skills-reusable-workflows) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-reusable-workflows/issues/1) | Created reusable Node lint, coverage and Playwright workflow; invoked it from CI with permission-scoped GitHub Pages deployment and PR feedback. Six final CI jobs passed; merged PR #5. |
 | Introduction to Repository Management | [Repository](https://github.com/Nanodagr8/skills-introduction-to-repository-management) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-repository-management/issues/1) | Protected main with a ruleset; added .gitignore, CODEOWNERS, CONTRIBUTING, Code of Conduct, issue templates, Dependabot and security policy; enabled free CodeQL default scanning and private vulnerability reporting; merged PRs #2 and #3. |
 | Release-Based Workflow | [Repository](https://github.com/Nanodagr8/skills-release-based-workflow) / [Final course README](https://github.com/Nanodagr8/skills-release-based-workflow/blob/main/README.md) | Published v0.9 prerelease, v1.0.0 release, and v1.0.1 hotfix; merged staged feature/release/hotfix PRs. GitHub exercise state `X` and official final congratulations verified. |
+| Introduction to CodeQL | [Repository](https://github.com/Nanodagr8/skills-introduction-to-codeql) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-codeql/issues/1) / [Fixed SQL injection alert #1](https://github.com/Nanodagr8/skills-introduction-to-codeql/security/code-scanning/1) | Enabled free public CodeQL scanning; intentionally introduced SQL injection only in the isolated sample, confirmed one high-severity finding, tested dismissal/reopen audit trail, restored parameterized SQL, and verified the finding was fixed with zero open alerts. |
 
 ## Reusable engineering knowledge
 
 - GitHub flow: branch → focused commit → pull request → diff review → merge → traceable completion.
 - Reusable workflow permissions: keep least-privilege ceilings at callers and explicitly grant Pages or pull-request write permissions only to jobs that require them.
+- CodeQL security scanning: verify vulnerability findings and triage audit history, then make parameterized SQL repairs and confirm no open alerts remain.
 - Release management: prerelease tags, staged release branches, generated release notes, semantic versioning, and emergency patch releases; verify the official exercise's final state before counting completion.
 - Repository governance: maintain branch rulesets, CODEOWNERS, contribution standards, issue templates, security reporting, Dependabot, and CodeQL for public training projects.
 - Workflow artifact discipline: preserve coverage and browser evidence, download immutable builds in downstream jobs, and pin compatible runners for Playwright.
@@ -42,11 +44,10 @@
 - The Copilot App course was completed using GitHub CLI, the GitHub connection and local browser automation; GitHub verified the repository signals, but not every interaction was performed within the Copilot App's own GUI.
 - The Copilot App seed repository emitted Dependabot security warnings; investigate and patch advisories before any production reuse.
 - No evidence was collected that completion issued a separate Credly badge or passed a paid GitHub certification exam.
-- Courses beyond the twelve listed here were **not** marked complete in this ledger.
+- Courses beyond the thirteen listed here were **not** marked complete in this ledger.
 
 ## Next free course candidates
 
-- [Introduction to CodeQL](https://github.com/skills/introduction-to-codeql): detection and remediation of SQL injection; currently in progress in a separate public demo training repository.
 - [Introduction to Git](https://github.com/skills/introduction-to-git): local version control and branching practice, not started.
 - [Introduction to Git](https://github.com/skills/introduction-to-git): Git CLI, branching, diffs, and local merges; not started. Use isolated local Git config and avoid metered Codespaces.
 - [Ship with Quality](https://github.com/skills/ship-with-quality): blocked for personal accounts by the organization-only Code Quality prerequisite; do not buy an upgrade.
@@ -56,6 +57,7 @@
 - Completed and verified: [Work with Workflow Artifacts](https://github.com/Nanodagr8/skills-workflow-artifacts). The optional protected-environment reviewer gate was not configured; simulated deployment jobs did not publish to external infrastructure.
 - [Ship with Quality](https://github.com/skills/ship-with-quality) cannot be completed using this personal account because its Code Quality prerequisite is organization-only. No upgrade or paid entitlement was used.
 - No Codespace was started; Python tests were run locally on the connected Windows computer to avoid metered cloud development.
+- The Introduction to CodeQL course briefly introduced an unsafe query into a public *training sample only*, as required for a real scanner finding; the query was restored to parameterized execution, and GitHub closed the finding as fixed. This must never be copied into production code.
 - The Reusable Workflows sample deployed to its free **public training GitHub Pages site** (as required by the exercise); the unrelated Nano Studios repositories were unchanged.
 - GitHub CodeQL default setup was enabled on the public Repository Management training project; its initial setup workflow passed. This is a free public-repository feature, not a paid certification.
 
