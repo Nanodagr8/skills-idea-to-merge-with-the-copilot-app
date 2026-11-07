@@ -4,7 +4,7 @@
 **GitHub account:** [Nanodagr8](https://github.com/Nanodagr8)  
 **Training policy:** Free-only. No paid certification exams, subscriptions, or purchased cloud runtime. This ledger records completed **GitHub Skills exercises**, not formal GitHub certification exams or independently issued digital badges.
 
-## Completed exercises (14 verified GitHub Skills course completions: 13 closed instructor issues plus the completed release exercise)
+## Completed exercises (15 verified GitHub Skills course completions: 13 closed instructor issues plus two completed README-driven exercises)
 
 | Exercise | Evidence | Key verified work |
 | --- | --- | --- |
@@ -22,11 +22,13 @@
 | Release-Based Workflow | [Repository](https://github.com/Nanodagr8/skills-release-based-workflow) / [Final course README](https://github.com/Nanodagr8/skills-release-based-workflow/blob/main/README.md) | Published v0.9 prerelease, v1.0.0 release, and v1.0.1 hotfix; merged staged feature/release/hotfix PRs. GitHub exercise state `X` and official final congratulations verified. |
 | Introduction to CodeQL | [Repository](https://github.com/Nanodagr8/skills-introduction-to-codeql) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-codeql/issues/1) / [Fixed SQL injection alert #1](https://github.com/Nanodagr8/skills-introduction-to-codeql/security/code-scanning/1) | Enabled free public CodeQL scanning; intentionally introduced SQL injection only in the isolated sample, confirmed one high-severity finding, tested dismissal/reopen audit trail, restored parameterized SQL, and verified the finding was fixed with zero open alerts. |
 | Introduction to Git | [Repository](https://github.com/Nanodagr8/skills-introduction-to-git) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-git/issues/1) | Completed all six graded stages with a local Windows Git sandbox: isolated Git identity, 13 real commits, history checkouts/diffs, feature branches, a no-ff high-score merge, a fast-forward level merge, and 6 passing Node tests covering persistence, level progression, UI, patterns and Unicode preservation. No Codespace opened. |
+| Connect the Dots | [Repository](https://github.com/Nanodagr8/skills-connect-the-dots) / [Final course README](https://github.com/Nanodagr8/skills-connect-the-dots/blob/main/README.md) / [Merged PR #4](https://github.com/Nanodagr8/skills-connect-the-dots/pull/4) | Closed duplicate issue #1, traced sidebar provenance to commit `51cfac9`, repaired documentation link, merged the fix with `Closes #2`, verified issue #2 closed and course state `X`, and deleted the merged branch. |
 
 ## Reusable engineering knowledge
 
 - GitHub flow: branch → focused commit → pull request → diff review → merge → traceable completion.
 - Reusable workflow permissions: keep least-privilege ceilings at callers and explicitly grant Pages or pull-request write permissions only to jobs that require them.
+- GitHub provenance: cross-reference duplicate issues, find the initiating commit with blame/history, connect issue-to-PR resolution through closing keywords, and verify post-merge states.
 - Local Git fundamentals: stage focused commits, inspect historical snapshots, preserve UTF-8 source, and validate actual no-ff and fast-forward merges with a clean working tree.
 - CodeQL security scanning: verify vulnerability findings and triage audit history, then make parameterized SQL repairs and confirm no open alerts remain.
 - Release management: prerelease tags, staged release branches, generated release notes, semantic versioning, and emergency patch releases; verify the official exercise's final state before counting completion.
@@ -46,7 +48,7 @@
 - The Copilot App course was completed using GitHub CLI, the GitHub connection and local browser automation; GitHub verified the repository signals, but not every interaction was performed within the Copilot App's own GUI.
 - The Copilot App seed repository emitted Dependabot security warnings; investigate and patch advisories before any production reuse.
 - No evidence was collected that completion issued a separate Credly badge or passed a paid GitHub certification exam.
-- Courses beyond the fourteen listed here were **not** marked complete in this ledger.
+- Courses beyond the fifteen listed here were **not** marked complete in this ledger.
 
 ## Next free course candidates
 
