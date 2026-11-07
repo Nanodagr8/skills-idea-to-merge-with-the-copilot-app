@@ -4,7 +4,7 @@
 **GitHub account:** [Nanodagr8](https://github.com/Nanodagr8)  
 **Training policy:** Free-only. No paid certification exams, subscriptions, or purchased cloud runtime. This ledger records completed **GitHub Skills exercises**, not formal GitHub certification exams or independently issued digital badges.
 
-## Completed exercises (all eight official walkthrough issues closed)
+## Completed exercises (all nine official walkthrough issues closed)
 
 | Exercise | Evidence | Key verified work |
 | --- | --- | --- |
@@ -16,10 +16,12 @@
 | Hello GitHub Actions | [Repository](https://github.com/Nanodagr8/skills-hello-github-actions) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-hello-github-actions/issues/1) | Created PR-triggered GitHub Actions workflow, Ubuntu job, GitHub CLI welcome comment, verified successful run and merged PR #2. |
 | Test with Actions | [Repository](https://github.com/Nanodagr8/skills-test-with-actions) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-test-with-actions/issues/1) | Reproduced failing Fibonacci test, fixed expected result, added negative-input tests: 7 passing tests, 100% coverage, active main ruleset requiring python-coverage, repaired Python CI matrix, merged PR #2. |
 | GitHub Pages | [Repository](https://github.com/Nanodagr8/skills-github-pages) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-github-pages/issues/1) / [Live site](https://nanodagr8.github.io/skills-github-pages/) | Enabled free public GitHub Pages, customized engineering homepage, configured Jekyll minima, published dated blog post. Final review complete, HTTP 200 verified. |
+| Work with Workflow Artifacts | [Repository](https://github.com/Nanodagr8/skills-workflow-artifacts) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-workflow-artifacts/issues/1) | Uploaded coverage and single-file Playwright HTML reports, reused a build artifact in dev and cross-workflow prod simulation. All four official steps and downstream workflows passed; pinned Ubuntu 24.04 to correct Playwright compatibility. No production deployment. |
 
 ## Reusable engineering knowledge
 
 - GitHub flow: branch → focused commit → pull request → diff review → merge → traceable completion.
+- Workflow artifact discipline: preserve coverage and browser evidence, download immutable builds in downstream jobs, and pin compatible runners for Playwright.
 - CI quality gates: establish a failing baseline, correct test expectations, expand coverage to 100%, and require passing checks before merging.
 - Public documentation: publish Jekyll content using the minima theme and date-stamped posts with valid YAML front matter.
 - Review workflow: clarify a PR's purpose, self-assign responsibility, submit meaningful line-specific feedback, apply a suggested change, and verify the resulting merge.
@@ -34,14 +36,21 @@
 - The Copilot App course was completed using GitHub CLI, the GitHub connection and local browser automation; GitHub verified the repository signals, but not every interaction was performed within the Copilot App's own GUI.
 - The Copilot App seed repository emitted Dependabot security warnings; investigate and patch advisories before any production reuse.
 - No evidence was collected that completion issued a separate Credly badge or passed a paid GitHub certification exam.
-- Courses beyond the eight listed here were **not** marked complete in this ledger.
+- Courses beyond the nine listed here were **not** marked complete in this ledger.
 
-## Recommended next free course
+## Next free course candidates
 
-[Review pull requests](https://github.com/skills/review-pull-requests), then [Ship with Quality](https://github.com/skills/ship-with-quality) when the template and any tool requirements are confirmed free. Keep each exercise's grading signals and evidence separate.
+- [Reusable Workflows](https://github.com/skills/reusable-workflows): free public repository workflow reuse and permission boundaries; not started.
+- [Introduction to Repository Management](https://github.com/skills/introduction-to-repository-management): rulesets, CODEOWNERS, contribution standards, and security controls; not started.
+- [Introduction to Git](https://github.com/skills/introduction-to-git): Git CLI, branching, diffs, and local merges; not started. Use isolated local Git config and avoid metered Codespaces.
+- [Ship with Quality](https://github.com/skills/ship-with-quality): **blocked for personal accounts** by Code Quality prerequisite; do not claim completed or buy an upgrade.
 
 ## Free-only continuation / blockers
 
-- In progress as of this update: [Work with Workflow Artifacts](https://github.com/Nanodagr8/skills-workflow-artifacts); not yet counted as complete.
+- Completed and verified: [Work with Workflow Artifacts](https://github.com/Nanodagr8/skills-workflow-artifacts). The optional protected-environment reviewer gate was not configured; simulated deployment jobs did not publish to external infrastructure.
 - [Ship with Quality](https://github.com/skills/ship-with-quality) cannot be completed using this personal account because its Code Quality prerequisite is organization-only. No upgrade or paid entitlement was used.
 - No Codespace was started; Python tests were run locally on the connected Windows computer to avoid metered cloud development.
+
+## Execution and continuity protocol
+
+For subsequent free-skills challenges: inspect the official requirements; avoid paid courses, credits, subscriptions, and metered development environments; use isolated public training repositories; run tests and review diffs; distinguish temporary failed checks from the final accepted grade; record only closed instructor issues as completions; save links and reproduction evidence here; leave unrelated Nano Studios repositories unchanged. Do not claim a separate certification or digital badge without the issuer's evidence.
