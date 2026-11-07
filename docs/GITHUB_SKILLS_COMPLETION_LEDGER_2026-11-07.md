@@ -4,7 +4,7 @@
 **GitHub account:** [Nanodagr8](https://github.com/Nanodagr8)  
 **Training policy:** Free-only. No paid certification exams, subscriptions, or purchased cloud runtime. This ledger records completed **GitHub Skills exercises**, not formal GitHub certification exams or independently issued digital badges.
 
-## Completed exercises (18 verified GitHub Skills course completions: 15 closed instructor issues plus three completed README-driven exercises)
+## Completed exercises (19 verified GitHub Skills course completions: 16 closed instructor issues plus three completed README-driven exercises)
 
 | Exercise | Evidence | Key verified work |
 | --- | --- | --- |
@@ -26,11 +26,13 @@
 | Secure Repository Supply Chain | [Repository](https://github.com/Nanodagr8/skills-secure-repository-supply-chain) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-secure-repository-supply-chain/issues/1) / [Minimist fix PR #9](https://github.com/Nanodagr8/skills-secure-repository-supply-chain/pull/9) / [Axios update PR #7](https://github.com/Nanodagr8/skills-secure-repository-supply-chain/pull/7) | All four official steps passed: inspected lockfile dependency graph, enabled alerts, fixed the critical minimist 1.2.5 vulnerability with verified 1.2.8 integrity, merged an automated Axios update, enabled security updates, and configured monthly GitHub Actions plus weekly NuGet version checks. Remaining alerts are explicitly tracked; not production-safe. |
 | Configure CodeQL Language Matrix | [Repository](https://github.com/Nanodagr8/skills-configure-codeql-language-matrix) / [Final course README](https://github.com/Nanodagr8/skills-configure-codeql-language-matrix/blob/main/README.md) | Verified course state `X` and both official workflow steps successful. Configured CodeQL four-language matrix (Go, Java/Kotlin, JavaScript/TypeScript, Python), language-specific initialization and analysis categories, and conditional Java/Kotlin autobuild. |
 | Write JavaScript Actions | [Repository](https://github.com/Nanodagr8/skills-write-javascript-actions) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-write-javascript-actions/issues/1) / [Successful live workflow](https://github.com/Nanodagr8/skills-write-javascript-actions/actions/runs/42386555876) | All six official stages passed; created and bundled a Node 24 JavaScript Action using @actions/core and native fetch, wrote five passing unit tests, removed deprecated request dependencies, registered action.yml, and verified `/joke` issue comment produced a successful public workflow and real bot reply. |
+| Introduction to Secret Scanning | [Repository](https://github.com/Nanodagr8/skills-introduction-to-secret-scanning) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-secret-scanning/issues/1) / [Security training note](https://github.com/Nanodagr8/skills-introduction-to-secret-scanning/blob/main/SECURITY_TRAINING.md) | All three instructor stages accepted. Enabled secret scanning and push protection on an isolated public course repo, inspected three official inactive example alerts, resolved them as **Used in tests**, verified a fake PAT push was blocked, did not bypass push protection, deleted the training credentials file from current main, verified zero open secret alerts. |
 
 ## Reusable engineering knowledge
 
 - GitHub flow: branch → focused commit → pull request → diff review → merge → traceable completion.
 - Reusable workflow permissions: keep least-privilege ceilings at callers and explicitly grant Pages or pull-request write permissions only to jobs that require them.
+- Secret-scanning safeguards: configure scanning and push protection, triage known inactive test examples without mislabeling real credential revocation, confirm repository-rule blocking, and never bypass without compelling authorized reason.
 - JavaScript Action authoring: use native Node fetch with timeouts, test through injected mocks, bundle for Node 24 with ncc, restrict comment triggers to trusted identities, and verify live Action output end-to-end.
 - Multi-language CodeQL: use matrix languages for initialization, category-split analysis and compiled-language autobuild under an explicit condition.
 - Software supply-chain diligence: use advisories' patched ranges, verify package-lock integrity, review bot-generated dependency PRs, and configure both security and scheduled version updates. Do not call a repository secure while alerts remain.
@@ -54,7 +56,7 @@
 - The Copilot App course was completed using GitHub CLI, the GitHub connection and local browser automation; GitHub verified the repository signals, but not every interaction was performed within the Copilot App's own GUI.
 - The Copilot App seed repository emitted Dependabot security warnings; investigate and patch advisories before any production reuse.
 - No evidence was collected that completion issued a separate Credly badge or passed a paid GitHub certification exam.
-- Courses beyond the eighteen listed here were **not** marked complete in this ledger.
+- Courses beyond the nineteen listed here were **not** marked complete in this ledger.
 
 ## Next free course candidates
 
