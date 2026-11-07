@@ -12,7 +12,6 @@
 | Introduction to GitHub | [Repository](https://github.com/Nanodagr8/skills-introduction-to-github) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-github/issues/1) | Created `my-first-branch`, committed `PROFILE.md`, opened and merged PR #2; final congratulations issued. |
 | Communicate using Markdown | [Repository](https://github.com/Nanodagr8/skills-communicate-using-markdown) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-communicate-using-markdown/issues/1) | Markdown headings, task checklist, language-tagged fenced bash block, accessible HTML image; merged PR #2; all five steps and final instructor review. |
 | Resolve Merge Conflicts | [Repository](https://github.com/Nanodagr8/skills-resolve-merge-conflicts) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-resolve-merge-conflicts/issues/1) | Reproduced a real conflicting edit to `resume.md`, preserved the `my-resume` side intentionally, committed reverse merge resolution, merged PR #2; final review issued. |
-
 | Review pull requests | [Repository](https://github.com/Nanodagr8/skills-review-pull-requests) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-review-pull-requests/issues/1) | Opened PR #2; assigned owner, submitted a review, posted a line-specific suggestion, applied the suggested wording, and merged. Steps 1–5 passed and final review confirmed completion. |
 
 ## Reusable engineering knowledge
