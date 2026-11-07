@@ -4,7 +4,7 @@
 **GitHub account:** [Nanodagr8](https://github.com/Nanodagr8)  
 **Training policy:** Free-only. No paid certification exams, subscriptions, or purchased cloud runtime. This ledger records completed **GitHub Skills exercises**, not formal GitHub certification exams or independently issued digital badges.
 
-## Completed exercises (all official walkthrough issues closed)
+## Completed exercises (all five official walkthrough issues closed)
 
 | Exercise | Evidence | Key verified work |
 | --- | --- | --- |
@@ -13,9 +13,12 @@
 | Communicate using Markdown | [Repository](https://github.com/Nanodagr8/skills-communicate-using-markdown) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-communicate-using-markdown/issues/1) | Markdown headings, task checklist, language-tagged fenced bash block, accessible HTML image; merged PR #2; all five steps and final instructor review. |
 | Resolve Merge Conflicts | [Repository](https://github.com/Nanodagr8/skills-resolve-merge-conflicts) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-resolve-merge-conflicts/issues/1) | Reproduced a real conflicting edit to `resume.md`, preserved the `my-resume` side intentionally, committed reverse merge resolution, merged PR #2; final review issued. |
 
+| Review pull requests | [Repository](https://github.com/Nanodagr8/skills-review-pull-requests) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-review-pull-requests/issues/1) | Opened PR #2; assigned owner, submitted a review, posted a line-specific suggestion, applied the suggested wording, and merged. Steps 1–5 passed and final review confirmed completion. |
+
 ## Reusable engineering knowledge
 
 - GitHub flow: branch → focused commit → pull request → diff review → merge → traceable completion.
+- Review workflow: clarify a PR's purpose, self-assign responsibility, submit meaningful line-specific feedback, apply a suggested change, and verify the resulting merge.
 - Git merge conflicts: inspect both versions, decide the intended semantics, resolve on the feature branch, commit a merge resolution and retest before merging the PR.
 - GitHub-flavored Markdown: headings; linked checklists; language-highlighted code fences; accessible image alternative text and sizing.
 - Client-only state in Astro: `localStorage` use must occur within a browser-side script or hydration boundary; never during SSR.
@@ -27,7 +30,7 @@
 - The Copilot App course was completed using GitHub CLI, the GitHub connection and local browser automation; GitHub verified the repository signals, but not every interaction was performed within the Copilot App's own GUI.
 - The Copilot App seed repository emitted Dependabot security warnings; investigate and patch advisories before any production reuse.
 - No evidence was collected that completion issued a separate Credly badge or passed a paid GitHub certification exam.
-- Courses beyond the four listed here were **not** marked complete in this ledger.
+- Courses beyond the five listed here were **not** marked complete in this ledger.
 
 ## Recommended next free course
 
