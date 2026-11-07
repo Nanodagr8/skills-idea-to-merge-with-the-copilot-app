@@ -4,7 +4,7 @@
 **GitHub account:** [Nanodagr8](https://github.com/Nanodagr8)  
 **Training policy:** Free-only. No paid certification exams, subscriptions, or purchased cloud runtime. This ledger records completed **GitHub Skills exercises**, not formal GitHub certification exams or independently issued digital badges.
 
-## Completed exercises (15 verified GitHub Skills course completions: 13 closed instructor issues plus two completed README-driven exercises)
+## Completed exercises (16 verified GitHub Skills course completions: 14 closed instructor issues plus two completed README-driven exercises)
 
 | Exercise | Evidence | Key verified work |
 | --- | --- | --- |
@@ -23,11 +23,13 @@
 | Introduction to CodeQL | [Repository](https://github.com/Nanodagr8/skills-introduction-to-codeql) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-codeql/issues/1) / [Fixed SQL injection alert #1](https://github.com/Nanodagr8/skills-introduction-to-codeql/security/code-scanning/1) | Enabled free public CodeQL scanning; intentionally introduced SQL injection only in the isolated sample, confirmed one high-severity finding, tested dismissal/reopen audit trail, restored parameterized SQL, and verified the finding was fixed with zero open alerts. |
 | Introduction to Git | [Repository](https://github.com/Nanodagr8/skills-introduction-to-git) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-introduction-to-git/issues/1) | Completed all six graded stages with a local Windows Git sandbox: isolated Git identity, 13 real commits, history checkouts/diffs, feature branches, a no-ff high-score merge, a fast-forward level merge, and 6 passing Node tests covering persistence, level progression, UI, patterns and Unicode preservation. No Codespace opened. |
 | Connect the Dots | [Repository](https://github.com/Nanodagr8/skills-connect-the-dots) / [Final course README](https://github.com/Nanodagr8/skills-connect-the-dots/blob/main/README.md) / [Merged PR #4](https://github.com/Nanodagr8/skills-connect-the-dots/pull/4) | Closed duplicate issue #1, traced sidebar provenance to commit `51cfac9`, repaired documentation link, merged the fix with `Closes #2`, verified issue #2 closed and course state `X`, and deleted the merged branch. |
+| Secure Repository Supply Chain | [Repository](https://github.com/Nanodagr8/skills-secure-repository-supply-chain) / [Closed instructor issue #1](https://github.com/Nanodagr8/skills-secure-repository-supply-chain/issues/1) / [Minimist fix PR #9](https://github.com/Nanodagr8/skills-secure-repository-supply-chain/pull/9) / [Axios update PR #7](https://github.com/Nanodagr8/skills-secure-repository-supply-chain/pull/7) | All four official steps passed: inspected lockfile dependency graph, enabled alerts, fixed the critical minimist 1.2.5 vulnerability with verified 1.2.8 integrity, merged an automated Axios update, enabled security updates, and configured monthly GitHub Actions plus weekly NuGet version checks. Remaining alerts are explicitly tracked; not production-safe. |
 
 ## Reusable engineering knowledge
 
 - GitHub flow: branch → focused commit → pull request → diff review → merge → traceable completion.
 - Reusable workflow permissions: keep least-privilege ceilings at callers and explicitly grant Pages or pull-request write permissions only to jobs that require them.
+- Software supply-chain diligence: use advisories' patched ranges, verify package-lock integrity, review bot-generated dependency PRs, and configure both security and scheduled version updates. Do not call a repository secure while alerts remain.
 - GitHub provenance: cross-reference duplicate issues, find the initiating commit with blame/history, connect issue-to-PR resolution through closing keywords, and verify post-merge states.
 - Local Git fundamentals: stage focused commits, inspect historical snapshots, preserve UTF-8 source, and validate actual no-ff and fast-forward merges with a clean working tree.
 - CodeQL security scanning: verify vulnerability findings and triage audit history, then make parameterized SQL repairs and confirm no open alerts remain.
@@ -48,7 +50,7 @@
 - The Copilot App course was completed using GitHub CLI, the GitHub connection and local browser automation; GitHub verified the repository signals, but not every interaction was performed within the Copilot App's own GUI.
 - The Copilot App seed repository emitted Dependabot security warnings; investigate and patch advisories before any production reuse.
 - No evidence was collected that completion issued a separate Credly badge or passed a paid GitHub certification exam.
-- Courses beyond the fifteen listed here were **not** marked complete in this ledger.
+- Courses beyond the sixteen listed here were **not** marked complete in this ledger.
 
 ## Next free course candidates
 
@@ -59,6 +61,7 @@
 - Completed and verified: [Work with Workflow Artifacts](https://github.com/Nanodagr8/skills-workflow-artifacts). The optional protected-environment reviewer gate was not configured; simulated deployment jobs did not publish to external infrastructure.
 - [Ship with Quality](https://github.com/skills/ship-with-quality) cannot be completed using this personal account because its Code Quality prerequisite is organization-only. No upgrade or paid entitlement was used.
 - No Codespace was started; Python and JavaScript tests were run locally on the connected Windows computer to avoid metered cloud development.
+- The Supply Chain training repository still showed 31 open Dependabot alerts immediately after course completion (23 attributed to Axios, others to form-data, qs, request, tough-cookie, uuid, and xml2js). The critical minimist alert #3 was verified **fixed**. These are legacy sample dependencies; never deploy this example as production-ready.
 - [Introduction to Git](https://github.com/Nanodagr8/skills-introduction-to-git) used a real isolated local practice repository at `%USERPROFILE%\\Documents\\GitHubSkills_FreeTraining_20261107\\stack-overflown`. The Codespaces-only exercise monitor was **not** installed; its corresponding GitHub grading events were submitted after independently executing and verifying the real Git steps locally. The instructor issue was officially closed. No change was made to the computer\'s existing global Git identity.
 - The Introduction to CodeQL course briefly introduced an unsafe query into a public *training sample only*, as required for a real scanner finding; the query was restored to parameterized execution, and GitHub closed the finding as fixed. This must never be copied into production code.
 - The Reusable Workflows sample deployed to its free **public training GitHub Pages site** (as required by the exercise); the unrelated Nano Studios repositories were unchanged.
