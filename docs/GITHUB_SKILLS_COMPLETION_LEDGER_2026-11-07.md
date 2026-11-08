@@ -73,6 +73,26 @@
 - The Reusable Workflows sample deployed to its free **public training GitHub Pages site** (as required by the exercise); the unrelated Nano Studios repositories were unchanged.
 - GitHub CodeQL default setup was enabled on the public Repository Management training project; its initial setup workflow passed. This is a free public-repository feature, not a paid certification.
 
+## Additional free engineering labs (not graded GitHub Skills courses)
+
+### Node 24 Action CI hardening — verified 2026-11-07
+
+- Training repository: [Write JavaScript Actions](https://github.com/Nanodagr8/skills-write-javascript-actions).
+- [PR #2 merged](https://github.com/Nanodagr8/skills-write-javascript-actions/pull/2), merge commit `59efbabc90debd1ce6de8fb0a97922cd3fdf4522`.
+- Added [Node Action Quality workflow](https://github.com/Nanodagr8/skills-write-javascript-actions/blob/main/.github/workflows/ci-quality.yml): GitHub-hosted Node 24 tests, `npm ci` with lockfile, deterministic ncc rebuild check against checked-in `dist/`, action metadata verification, and an `npm audit --audit-level=high` job.
+- [PR verification run](https://github.com/Nanodagr8/skills-write-javascript-actions/actions/runs/42449784831): **both jobs passed**.
+- [Post-merge main verification run](https://github.com/Nanodagr8/skills-write-javascript-actions/actions/runs/42449832643): **both jobs passed**.
+- Source changes were restricted to the new workflow; no external deployment and no metered Windows remote operations were used.
+- **Not a 20th course completion.** The official GitHub Skills total remains **19** until another official exercise is independently verified.
+
+### Continuation tooling constraint
+
+- Connected GitHub repository tools remain usable for issue/PR review, branch creation, repository file edits and merges.
+- The remote Windows Desktop Commander account returned `remote_calls_left_pct=0`; avoid further calls or claiming local-machine execution until the allowance resets.
+- The currently connected GitHub plugin lacks a dedicated `create_repository` action. The plugin search found GitHub already installed and did not identify a relevant *free* replacement for repository creation.
+- Next official exercise candidates: [Publish Docker Images](https://github.com/skills/publish-docker-images) (public GHCR/GitHub Actions), [Remove Commit History](https://github.com/skills/change-commit-history) (BFG and history rewriting in a training-only repo), or [Secure Code Game](https://github.com/skills/secure-code-game) (free interactive Seasons 1–2; Seasons 3–4 unavailable for equivalent current grading). Verify each course's current prerequisites before committing resources.
+- A new training repository must be created using an authenticated tool with that capability, or directly through GitHub's [pre-filled template page](https://github.com/new?template_owner=skills&template_name=publish-docker-images&owner=%40me&name=skills-publish-docker-images&description=Exercise:+Publish+Docker+Images&visibility=public). Do not reuse or rewrite production Nano Studios history.
+
 ## Execution and continuity protocol
 
 For subsequent free-skills challenges: inspect the official requirements; avoid paid courses, credits, subscriptions, and metered development environments; use isolated public training repositories; run tests and review diffs; distinguish temporary failed checks from the final accepted grade; record only closed instructor issues as completions; save links and reproduction evidence here; leave unrelated Nano Studios repositories unchanged. Do not claim a separate certification or digital badge without the issuer's evidence.
