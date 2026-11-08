@@ -85,6 +85,16 @@
 - Source changes were restricted to the new workflow; no external deployment and no metered Windows remote operations were used.
 - **Not a 20th course completion.** The official GitHub Skills total remains **19** until another official exercise is independently verified.
 
+### Rejection of invalid joke output — verified 2026-11-07
+
+- Training repository: [Write JavaScript Actions](https://github.com/Nanodagr8/skills-write-javascript-actions).
+- [PR #3 merged](https://github.com/Nanodagr8/skills-write-javascript-actions/pull/3), merge commit `72e8744ddd25d690674a0c2a39741b4b7efa4975`.
+- RED: introduced behavior tests for blank, undefined, and whitespace-padded joke output. [First CI run](https://github.com/Nanodagr8/skills-write-javascript-actions/actions/runs/42450236074) failed in Node tests while dependency audit passed.
+- GREEN: action now rejects non-string/empty joke results and trims valid output; added a numeric-value regression test. The action bundle was rebuilt using a temporary isolated branch-only workflow, then that write-enabled workflow was deleted before merge.
+- [Final PR CI run](https://github.com/Nanodagr8/skills-write-javascript-actions/actions/runs/42450344245): **both test/reproducibility and dependency-audit jobs passed**.
+- [Post-merge main CI run](https://github.com/Nanodagr8/skills-write-javascript-actions/actions/runs/42450390841): **both jobs passed**. The final PR diff includes only `src/main.js`, `test/main.test.js`, and synchronized `dist/index.js`.
+- This improves reliability of the previously completed sample action; **not an additional graded GitHub Skills course**. The official total remains **19**.
+
 ### Continuation tooling constraint
 
 - Connected GitHub repository tools remain usable for issue/PR review, branch creation, repository file edits and merges.
